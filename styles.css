@@ -1,0 +1,72 @@
+/* Super basic reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.output-container {
+  width: 80vw;
+  border: solid black 1px;
+  border-radius: 1rem 0rem 1rem 0rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#output {
+  padding: 1rem;
+  border-radius: 1rem 0rem 1rem 0rem;
+}
+
+.range-label {
+  font-size: 0.7rem;
+}
+
+#buttons {
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#generate,
+.copy {
+  background-color: darkolivegreen;
+  color: beige;
+}
+
+.selector {
+  padding: 1rem;
+  border: solid black 0px;
+  border-radius: 1rem 0rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.selector-off {
+  background-color: beige;
+  color: olive;
+}
+
+.selector-on {
+  background-color: olive;
+  color: beige;
+}

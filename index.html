@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yet Another Password Maker</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="output-container">
+        <div id="output">Your password will appear here</div>
+        <div class="copy selector" onclick="copy()">COPY</div>
+      </div>
+      <div id="buttons">
+        <div id="range-slider">
+          <div class="range-label">
+            Please select a password length from 9 to 48
+          </div>
+          <input
+            type="range"
+            min="9"
+            max="48"
+            value="26"
+            class="slider"
+            id="myRange"
+            onchange="sliderNumber()"
+          />
+          <div id="rangeNumber">26</div>
+        </div>
+        <div id="generate" class="selector" onclick="generate()">Generate</div>
+      </div>
+    </div>
+  </body>
+</html>
